@@ -1,0 +1,9 @@
+//jsconfig.json
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "jsx": "react-jsx",
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*.ts", "src/backend/utils/authUtils.js", "src/backend/db/quiz.ts", "src/backend/controllers/quizController.ts", "src/server.js"]
+}
