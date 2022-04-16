@@ -1,0 +1,25 @@
+.footer {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .strong-text {
+  color: var(--COLOR-HIGHLIGHT);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.footer-links svg {
+  display: flex;
+}
+
+.footer-links svg:hover {
+  color: var(--COLOR-HIGHLIGHT);
+  transition: color 0.2s;
+}

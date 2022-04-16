@@ -1,0 +1,60 @@
+.category-card {
+  height: 300px;
+  flex-grow: 1;
+  border-radius: 1rem;
+  overflow: hidden;
+  color: var(--COLOR-DARK);
+  background-color: var(--COLOR-LIGHT);
+}
+
+.category-card img {
+  width: 100%;
+  height: 60%;
+}
+
+.category-card img:hover {
+  transform: scale(1.1);
+  transition: transform ease 1s;
+}
+
+.category-body {
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.category-body .level {
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--COLOR-LIGHT);
+  background-color: var(--COLOR-HIGHLIGHT);
+  border-radius: 4px;
+}
+
+.category-body .name {
+  margin: 0.5rem 0;
+}
+
+.category-body .genre {
+  margin-right: 0.2rem;
+  text-transform: capitalize;
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--COLOR-LIGHT);
+  background-color: var(--COLOR-WARNING);
+}
+
+.category-body .btn-floating {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+}
+
+.category-body .btn-floating:hover {
+  transform: translateY(-0.2rem);
+  transition: transform ease 0.5s;
+}

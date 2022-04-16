@@ -1,12 +1,15 @@
 import { v4 as uuid } from "uuid";
+import godofwar from "assets/posters/godofwar.jpeg";
+import batman from "assets/posters/batman.jpeg";
+import mario from "assets/posters/mario.jpeg";
 
 export const quizzes = [
   {
     _id: uuid(),
     name: "Batman",
     difficulty: "easy",
-    genres: ["action", "adventure"],
-    poster: "",
+    genres: ["action", "Adventure"],
+    poster: batman,
     questions: [
       {
         id: uuid(),
@@ -75,7 +78,7 @@ export const quizzes = [
     name: "God of War",
     difficulty: "medium",
     genres: ["action"],
-    poster: "",
+    poster: godofwar,
     questions: [
       {
         id: uuid(),
@@ -174,8 +177,8 @@ export const quizzes = [
     _id: uuid(),
     name: "Mario Bros",
     difficulty: "hard",
-    genre: ["action", "adventure"],
-    poster: "",
+    genres: ["action", "Adventure"],
+    poster: mario,
     questions: [
       {
         id: uuid(),

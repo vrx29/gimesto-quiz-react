@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { makeServer } from "./server";
 import { BrowserRouter as Router } from "react-router-dom";
+import { QuizProvider, ThemeProvider } from "./context";
 
 makeServer();
 
@@ -14,7 +15,11 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <ThemeProvider>
+        <QuizProvider>
+          <App />
+        </QuizProvider>
+      </ThemeProvider>
     </Router>
   </React.StrictMode>
 );
