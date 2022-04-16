@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home, MockmanAPI } from "./pages";
+import { Home, MockmanAPI, Quiz, Rules } from "./pages";
 import { Footer, Navbar } from "./components";
 import "./App.css";
 import { useTheme } from "./context";
@@ -12,7 +12,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/rules" element={<Rules />} />
+        <Route path="/quiz" element={<Quiz />} />
         <Route path="/mockman" element={<MockmanAPI />} />
+        <Route path="*" element={<div>404 Not found</div>} />
       </Routes>
       <Footer />
     </main>

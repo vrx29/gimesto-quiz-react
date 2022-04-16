@@ -1,0 +1,48 @@
+.card {
+  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  width: 500px;
+  border-radius: 1rem;
+  color: var(--COLOR-DARK);
+  background-color: var(--COLOR-LIGHT);
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
+.card h6 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.card ul li {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card .icon-arrow {
+  display: flex;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  color: var(--COLOR-HIGHLIGHT);
+}
+
+.card .btn {
+  max-width: max-content;
+  margin-left: auto;
+}
+
+/* --- Media Queries --- */
+@media screen and (max-width: 500px) {
+  .card {
+    width: fit-content;
+  }
+}

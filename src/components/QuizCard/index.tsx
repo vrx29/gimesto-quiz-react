@@ -16,7 +16,7 @@ export function QuizCard({ quiz }) {
             <span className="genre">{genre}</span>
           ))}
         </div>
-        <Link className="btn btn-floating" to="">
+        <Link className="btn btn-floating" to="/rules">
           <PlayIcon />
         </Link>
       </div>

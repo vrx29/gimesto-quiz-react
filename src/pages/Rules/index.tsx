@@ -1,0 +1,30 @@
+import "./rules.css";
+import rulesIcon from "assets/hero/rules.png";
+import React from "react";
+import { FingerRight } from "assets/icons";
+import { Link } from "react-router-dom";
+import { rules } from "data/rules";
+
+export function Rules() {
+  return (
+    <section>
+      <div className="card">
+        <img src={rulesIcon} alt="rules__page--img" />
+        <h6>Rules to be followed</h6>
+        <ul>
+          {rules.map((rule) => (
+            <li>
+              <span>
+                <FingerRight className="icon-arrow" />
+              </span>
+              {rule}
+            </li>
+          ))}
+        </ul>
+        <Link className="btn btn-primary" to="/quiz">
+          Start Quiz
+        </Link>
+      </div>
+    </section>
+  );
+}

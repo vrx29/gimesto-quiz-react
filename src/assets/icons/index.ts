@@ -4,3 +4,4 @@ export { PlayIcon } from "./PlayIcon";
 export { GithubIcon } from "./GithubIcon";
 export { LinkedinIcon } from "./LinkedinIcon";
 export { TwitterIcon } from "./TwitterIcon";
+export { FingerRight } from "./FingerRight";
