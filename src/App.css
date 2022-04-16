@@ -25,6 +25,7 @@ main {
 section {
   margin: auto;
   max-width: var(--MAX_WIDTH);
+  min-height: calc(100vh - 68px - 7rem );
 }
 
 a {

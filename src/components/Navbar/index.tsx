@@ -6,7 +6,7 @@ export const Navbar = () => {
   const { theme, setTheme } = useTheme();
   return (
     <nav className="navbar">
-      <Link to="./index.html" className="logo">
+      <Link to="/" className="logo">
         Gimesto
         <span className="logo-yellow">Quiz</span>
       </Link>
