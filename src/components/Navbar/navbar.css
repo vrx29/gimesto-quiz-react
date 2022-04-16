@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  margin: auto;
+  padding-left: unset;
+  padding-right: unset;
+  max-width: var(--MAX-WIDTH);
+  background: transparent;
+  box-shadow: unset;
+}
+
+.logo {
+  font-size: 1.4rem;
+  color: var(--COLOR-PRIMARY);
+  font-weight: 800;
+}
+
+.logo-yellow {
+  color: var(--COLOR-WARNING);
+}
+
+.right-cont {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.light-btn{
+  color: var(--COLOR-LIGHT);
+}
