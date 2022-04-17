@@ -4,8 +4,8 @@ const QuizContext = createContext(undefined);
 
 const QuizProvider = ({ children }) => {
   const [quizData, setQuizData] = useState([]);
-  const [currentQuiz, setCurrentQuiz] = useState();
-  const [currentQuizQuestions, setCurrentQuizQuestions] = useState();
+  const [currentQuiz, setCurrentQuiz] = useState(null);
+  const [currentQuizQuestions, setCurrentQuizQuestions] = useState(null);
   const [score, setScore] = useState(0);
 
   useEffect(() => {

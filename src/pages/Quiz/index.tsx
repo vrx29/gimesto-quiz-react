@@ -2,7 +2,7 @@ import axios from "axios";
 import { useQuizData } from "context";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Options } from "./components";
+import { Options } from "components";
 import "./quiz.css";
 
 export function Quiz() {
@@ -37,13 +37,12 @@ export function Quiz() {
   }, [quesNo, setQues, currentQuizQuestions]);
 
   const handleOptionChange = (option) => {
+    const data = currentQuizQuestions;
+
     setCurrentQuizQuestions(
-      currentQuizQuestions.map((q) => {
-        if (q._id === ques._id) {
-          return { ...q, isSelected: option };
-        }
-        return { ...q };
-      })
+      data.map((q) =>
+        q.id === ques.id ? { ...q, isSelected: option } : { ...q }
+      )
     );
   };
 
@@ -53,7 +52,7 @@ export function Quiz() {
     }
 
     if (Number(quesNo) >= currentQuizQuestions.length - 1) {
-      navigate("/");
+      navigate("/result");
     } else {
       navigate(`/quiz/${quizId}/${Number(quesNo) + 1}`);
     }
@@ -84,8 +83,10 @@ export function Quiz() {
                   option={option}
                   key={id}
                   id={id}
+                  answer=""
                   isSelected={ques.isSelected}
                   handleOptionChange={handleOptionChange}
+                  type="quiz"
                 />
               ))}
             </div>
