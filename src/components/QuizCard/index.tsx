@@ -7,7 +7,7 @@ export function QuizCard({ quiz }) {
   const { _id: quizId, difficulty, name, genres, poster } = quiz;
   return (
     <div className="category-card">
-      <img src={poster} alt="" />
+      <img src={poster} alt="poster" />
       <div className="category-body">
         <span className="level">{difficulty}</span>
         <h5 className="name">{name}</h5>

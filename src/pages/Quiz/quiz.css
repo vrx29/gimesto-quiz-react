@@ -17,28 +17,3 @@
   font-size: 1.2rem;
   font-weight: 700;
 }
-
-/* .options-cont input[type="radio"] {
-  display: none;
-}
-
-.options-cont label {
-  padding: 1rem;
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin: 0.5rem 0;
-  border-radius: 0.5rem;
-  background-color: var(--COLOR-OPTION);
-}
-
-.options-cont label:hover {
-  background-color: var(--COLOR-OPTION-HOVER);
-  transform: translate(0.2rem);
-  transition: transform ease-in-out 0.5s;
-}
-
-.options-cont input[type="radio"]:checked + label {
-  background-color: var(--COLOR-PRIMARY);
-  color: var(--COLOR-LIGHT);
-} */
