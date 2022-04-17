@@ -7,6 +7,7 @@ import { useQuizData } from "context";
 export function Home() {
   const { quizData } = useQuizData();
   const quizContRef = useRef(null);
+
   return (
     <section>
       <div className="hero">
@@ -26,7 +27,7 @@ export function Home() {
       <h2>Our Recommended Categories</h2>
       <div className="card-cont" ref={quizContRef}>
         {quizData &&
-          quizData.map((item) => <QuizCard quiz={item} key={item._id} />)}
+          quizData.map((item) => <QuizCard key={item._id} quiz={item} />)}
       </div>
     </section>
   );

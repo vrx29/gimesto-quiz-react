@@ -1,6 +1,8 @@
 :root {
   --MAX_WIDTH: 1366px;
   --COLOR-HIGHLIGHT: #11bdb8;
+  --COLOR-OPTION: #f8f7ff;
+  --COLOR-OPTION-HOVER: #e2eafc;
 }
 
 .dark {
@@ -25,7 +27,7 @@ main {
 section {
   margin: auto;
   max-width: var(--MAX_WIDTH);
-  min-height: calc(100vh - 68px - 7rem );
+  min-height: calc(100vh - 68px - 7rem);
 }
 
 a {

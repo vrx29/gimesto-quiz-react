@@ -30,7 +30,7 @@ export const quizzes = [
       },
       {
         id: uuid(),
-        questions: "What Batman villain formerly worked as a zoologist?",
+        question: "What Batman villain formerly worked as a zoologist?",
         options: ["manbat", "killer croc", "the penguin", "poison ivy"],
         answer: "manbat",
       },
@@ -47,30 +47,30 @@ export const quizzes = [
         options: ["the joker", "batwoman", "alfred", "commissioner gordon"],
         answer: "batwoman",
       },
-      {
-        id: uuid(),
-        question: "Which of these Bat-villains was introduced first?",
-        options: ["catwoman", "the riddler", "mr. freeze", "the penguin"],
-        answer: "catwoman",
-      },
-      {
-        id: uuid(),
-        question: "What was Alfred the butler's original family name?",
-        options: ["pennyworth", "windham", "chatsworth", "beagle"],
-        answer: "beagle",
-      },
-      {
-        id: uuid(),
-        question: "What was Bat-hound's name?",
-        options: ["ace", "champ", "burt", "lucky"],
-        answer: "ace",
-      },
-      {
-        id: uuid(),
-        question: "Who first replaced Batman when he was paralyzed by Bane?",
-        options: ["nightwing", "azrael", "robin", "redhood"],
-        answer: "azrael",
-      },
+      // {
+      //   id: uuid(),
+      //   question: "Which of these Bat-villains was introduced first?",
+      //   options: ["catwoman", "the riddler", "mr. freeze", "the penguin"],
+      //   answer: "catwoman",
+      // },
+      // {
+      //   id: uuid(),
+      //   question: "What was Alfred the butler's original family name?",
+      //   options: ["pennyworth", "windham", "chatsworth", "beagle"],
+      //   answer: "beagle",
+      // },
+      // {
+      //   id: uuid(),
+      //   question: "What was Bat-hound's name?",
+      //   options: ["ace", "champ", "burt", "lucky"],
+      //   answer: "ace",
+      // },
+      // {
+      //   id: uuid(),
+      //   question: "Who first replaced Batman when he was paralyzed by Bane?",
+      //   options: ["nightwing", "azrael", "robin", "redhood"],
+      //   answer: "azrael",
+      // },
     ],
   },
   {
@@ -119,58 +119,58 @@ export const quizzes = [
         options: ["Apollo", "Ares", "Zeus", "Cronos"],
         answer: "Zeus",
       },
-      {
-        id: uuid(),
-        question: "Who was game director on God of War 3?",
-        options: [
-          "Ru Weerasuriya",
-          "Stig Asmussen",
-          "Cory Barlog",
-          "David Jaffe",
-        ],
-        answer: "Stig Asmussen",
-      },
-      {
-        id: uuid(),
-        question: "Who is the first Greek god to die in God of War 3?",
-        options: ["Hades", "Helios", "Poseidon", "Hercules"],
-        answer: "Poseidon",
-      },
-      {
-        id: uuid(),
-        question:
-          "Kratos' signature weapon goes by various names in the different games. What are his chain blades called in God of War: Ghost of Sparta?",
-        options: [
-          "Blades of Athena",
-          "Blades of Olympus",
-          "Blades of Exile",
-          "Blades of Chaos",
-        ],
-        answer: "Blades of Athena",
-      },
-      {
-        id: uuid(),
-        question: "Which is the only God of War game to feature multiplayer?",
-        options: [
-          "God of War: Ghost of Sparta",
-          "God of War (2018)",
-          "God of War: Ascension",
-          "God of War 3",
-        ],
-        answer: "God of War: Ascension",
-      },
-      {
-        id: uuid(),
-        question:
-          "In God of War (2018), Kratos wields an entirely different weapon. What is it called?",
-        options: [
-          "Axe of Chaos",
-          "Leviathan Axe",
-          "Axe of the Ghost",
-          "Spartan Axe",
-        ],
-        answer: "Leviathan Axe",
-      },
+      // {
+      //   id: uuid(),
+      //   question: "Who was game director on God of War 3?",
+      //   options: [
+      //     "Ru Weerasuriya",
+      //     "Stig Asmussen",
+      //     "Cory Barlog",
+      //     "David Jaffe",
+      //   ],
+      //   answer: "Stig Asmussen",
+      // },
+      // {
+      //   id: uuid(),
+      //   question: "Who is the first Greek god to die in God of War 3?",
+      //   options: ["Hades", "Helios", "Poseidon", "Hercules"],
+      //   answer: "Poseidon",
+      // },
+      // {
+      //   id: uuid(),
+      //   question:
+      //     "Kratos' signature weapon goes by various names in the different games. What are his chain blades called in God of War: Ghost of Sparta?",
+      //   options: [
+      //     "Blades of Athena",
+      //     "Blades of Olympus",
+      //     "Blades of Exile",
+      //     "Blades of Chaos",
+      //   ],
+      //   answer: "Blades of Athena",
+      // },
+      // {
+      //   id: uuid(),
+      //   question: "Which is the only God of War game to feature multiplayer?",
+      //   options: [
+      //     "God of War: Ghost of Sparta",
+      //     "God of War (2018)",
+      //     "God of War: Ascension",
+      //     "God of War 3",
+      //   ],
+      //   answer: "God of War: Ascension",
+      // },
+      // {
+      //   id: uuid(),
+      //   question:
+      //     "In God of War (2018), Kratos wields an entirely different weapon. What is it called?",
+      //   options: [
+      //     "Axe of Chaos",
+      //     "Leviathan Axe",
+      //     "Axe of the Ghost",
+      //     "Spartan Axe",
+      //   ],
+      //   answer: "Leviathan Axe",
+      // },
     ],
   },
   {
@@ -225,44 +225,44 @@ export const quizzes = [
         ],
         answer: "Princess Toadstool",
       },
-      {
-        id: uuid(),
-        question:
-          " In ‘Mario Kart Wii’, which character has the highest speed stat?",
-        options: ["Dry Bones", "Funky Kong", "Donkey Kong", "Baby Mario"],
-        answer: "Baby Mario",
-      },
-      {
-        id: uuid(),
-        question: "What color is Toadette’s hat?",
-        options: [
-          "Pink and white",
-          "Red and white",
-          "Blue and white",
-          "Yellow and white",
-        ],
-        answer: "Pink and white",
-      },
-      {
-        id: uuid(),
-        question:
-          "How many different Yoshi colors are there in ‘Super Mario Sunshine’?",
-        options: ["3", "4", "5", "6"],
-        answer: "3",
-      },
-      {
-        id: uuid(),
-        question:
-          "Which common enemy grows out of pipes and tries to eat Mario?",
-        options: ["Goomba", "Hammer Bro", "Piranha Plant", "Bowser"],
-        answer: "Piranha Plant",
-      },
-      {
-        id: uuid(),
-        question: "Who is consider Mario's biggest enemy?",
-        options: ["Wario", "Waluigi", "Kamek", "Bowser"],
-        answer: "Bowser",
-      },
+      // {
+      //   id: uuid(),
+      //   question:
+      //     " In ‘Mario Kart Wii’, which character has the highest speed stat?",
+      //   options: ["Dry Bones", "Funky Kong", "Donkey Kong", "Baby Mario"],
+      //   answer: "Baby Mario",
+      // },
+      // {
+      //   id: uuid(),
+      //   question: "What color is Toadette’s hat?",
+      //   options: [
+      //     "Pink and white",
+      //     "Red and white",
+      //     "Blue and white",
+      //     "Yellow and white",
+      //   ],
+      //   answer: "Pink and white",
+      // },
+      // {
+      //   id: uuid(),
+      //   question:
+      //     "How many different Yoshi colors are there in ‘Super Mario Sunshine’?",
+      //   options: ["3", "4", "5", "6"],
+      //   answer: "3",
+      // },
+      // {
+      //   id: uuid(),
+      //   question:
+      //     "Which common enemy grows out of pipes and tries to eat Mario?",
+      //   options: ["Goomba", "Hammer Bro", "Piranha Plant", "Bowser"],
+      //   answer: "Piranha Plant",
+      // },
+      // {
+      //   id: uuid(),
+      //   question: "Who is consider Mario's biggest enemy?",
+      //   options: ["Wario", "Waluigi", "Kamek", "Bowser"],
+      //   answer: "Bowser",
+      // },
     ],
   },
 ];

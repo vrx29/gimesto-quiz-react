@@ -1,0 +1,19 @@
+.m-b-2 {
+  margin-bottom: 2rem;
+}
+
+.card .info {
+  display: flex;
+  justify-content: space-between;
+  color: var(--COLOR-GRAY-300);
+}
+
+.highlight-text {
+  color: var(--COLOR-HIGHLIGHT);
+  font-weight: 600;
+}
+
+.card .question {
+  font-size: 1.2rem;
+  font-weight: 700;
+}

@@ -4,6 +4,9 @@ const QuizContext = createContext(undefined);
 
 const QuizProvider = ({ children }) => {
   const [quizData, setQuizData] = useState([]);
+  const [currentQuiz, setCurrentQuiz] = useState();
+  const [currentQuizQuestions, setCurrentQuizQuestions] = useState();
+  const [score, setScore] = useState(0);
 
   useEffect(() => {
     (async () => {
@@ -19,7 +22,19 @@ const QuizProvider = ({ children }) => {
   }, []);
 
   return (
-    <QuizContext.Provider value={{ quizData }}>{children}</QuizContext.Provider>
+    <QuizContext.Provider
+      value={{
+        quizData,
+        currentQuiz,
+        setCurrentQuiz,
+        currentQuizQuestions,
+        setCurrentQuizQuestions,
+        score,
+        setScore,
+      }}
+    >
+      {children}
+    </QuizContext.Provider>
   );
 };
 
