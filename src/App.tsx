@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/rules" element={<Rules />} />
-        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/rules/:quizId" element={<Rules />} />
+        <Route path="/quiz/:quizId/:quesNo" element={<Quiz />} />
         <Route path="/mockman" element={<MockmanAPI />} />
         <Route path="*" element={<div>404 Not found</div>} />
       </Routes>
