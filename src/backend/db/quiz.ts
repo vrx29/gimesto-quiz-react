@@ -112,6 +112,7 @@ export const quizzes = [
           "It's a tradition in his family",
           "He just thought it would look cool",
         ],
+        answer: "It's symbolic of his younger brother, Deimos",
       },
       {
         id: uuid(),
