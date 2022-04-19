@@ -13,7 +13,7 @@
 
 A Quiz App in which user can browse multiple Quizzes. Each quiz has difficulty level as well as Easy, Medium and Hard. Quiz can be played and after submission of quiz User will be displayed with result and correct answers of the Questions which they have answered wrong.
 
-Live Preview: [gimesto-quiz.vercel.app](gimesto-quiz.vercel.app)
+Live Preview: [gimesto-quiz.vercel.app](https://https://gimesto-quiz.vercel.app//)
 
 ---
 
@@ -112,8 +112,6 @@ Open the `localhost:3000` link in the browser.
 ## Result page with score
 
 ![Gimesto Quiz](/src/assets/screenshots/screen4.png)
-
-
 
 > 👨‍💻 Connect with me
 > </br>
