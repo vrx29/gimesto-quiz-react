@@ -1,12 +1,31 @@
 import axios from "axios";
-import { createContext, useContext, useEffect, useState } from "react";
-const QuizContext = createContext(undefined);
+import { questionProps, quizDataProps } from "constants/contextProps";
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
-const QuizProvider = ({ children }) => {
-  const [quizData, setQuizData] = useState([]);
-  const [currentQuiz, setCurrentQuiz] = useState(null);
-  const [currentQuizQuestions, setCurrentQuizQuestions] = useState(null);
-  const [score, setScore] = useState(0);
+type quizContextProps = {
+  quizData: quizDataProps[];
+  currentQuiz: quizDataProps;
+  setCurrentQuiz: (currentQuiz: quizDataProps) => void;
+  currentQuizQuestions: questionProps[];
+  setCurrentQuizQuestions: (currentQuizQuestions: questionProps[]) => void;
+  score: number;
+  setScore: (score: number) => void;
+};
+
+const QuizContext = createContext<quizContextProps>(undefined);
+
+const QuizProvider = ({ children }: { children: ReactNode }): JSX.Element => {
+  const [quizData, setQuizData] = useState<quizDataProps[]>(undefined);
+  const [currentQuiz, setCurrentQuiz] = useState<quizDataProps>(null);
+  const [currentQuizQuestions, setCurrentQuizQuestions] =
+    useState<questionProps[] | undefined>(null);
+  const [score, setScore] = useState<number>(0);
 
   useEffect(() => {
     (async () => {

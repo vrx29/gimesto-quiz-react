@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "assets/icons";
 
-export function Footer() {
+export function Footer(): JSX.Element {
   return (
     <footer className="footer">
       <span>

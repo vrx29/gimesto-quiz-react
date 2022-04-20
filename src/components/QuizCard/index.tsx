@@ -3,7 +3,18 @@ import React from "react";
 import { PlayIcon } from "assets/icons";
 import { Link } from "react-router-dom";
 
-export function QuizCard({ quiz }) {
+type QuizCardProps = {
+  key: string;
+  quiz: {
+    _id: string;
+    difficulty: string;
+    name: string;
+    genres: string[];
+    poster: string;
+  };
+};
+
+export function QuizCard({ quiz }: QuizCardProps): JSX.Element {
   const { _id: quizId, difficulty, name, genres, poster } = quiz;
   return (
     <div className="category-card">
@@ -12,11 +23,13 @@ export function QuizCard({ quiz }) {
         <span className="level">{difficulty}</span>
         <h5 className="name">{name}</h5>
         <div>
-          {genres.map((genre: string, id) => (
-            <span className="genre" key={id}>
-              {genre}
-            </span>
-          ))}
+          {genres.map(
+            (genre: string, index: number): JSX.Element => (
+              <span className="genre" key={index}>
+                {genre}
+              </span>
+            )
+          )}
         </div>
         <Link className="btn btn-floating" to={`/rules/${quizId}`}>
           <PlayIcon />

@@ -2,6 +2,15 @@ import classNames from "classnames";
 import React from "react";
 import "./options.css";
 
+type OptionProps = {
+  option: string;
+  id: string;
+  isSelected: string;
+  handleOptionChange: (option: string) => void;
+  type: string;
+  answer: string;
+};
+
 export function Options({
   option,
   id,
@@ -9,7 +18,7 @@ export function Options({
   handleOptionChange,
   type,
   answer,
-}) {
+}: OptionProps): JSX.Element {
   return (
     <>
       <input
