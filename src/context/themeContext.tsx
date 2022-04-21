@@ -7,8 +7,8 @@ type ThemeProviderType = {
 
 const ThemeContext = createContext<ThemeProviderType | undefined>(undefined);
 
-const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [theme, setTheme] = useState("light");
+const ThemeProvider = ({ children }: { children: ReactNode }): JSX.Element => {
+  const [theme, setTheme] = useState<string>("light");
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}

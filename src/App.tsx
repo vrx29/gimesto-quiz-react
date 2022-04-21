@@ -5,7 +5,7 @@ import { Footer, Navbar } from "./components";
 import "./App.css";
 import { useTheme } from "./context";
 
-function App() {
+function App(): JSX.Element {
   const { theme } = useTheme();
   return (
     <main className={theme}>

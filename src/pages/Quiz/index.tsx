@@ -5,8 +5,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Options } from "components";
 import "./quiz.css";
 
-export function Quiz() {
-  const { quizId, quesNo } = useParams();
+export function Quiz(): JSX.Element {
+  const { quizId, quesNo } = useParams<{ quizId: string; quesNo: string }>();
   const navigate = useNavigate();
   const {
     currentQuiz,
@@ -16,7 +16,13 @@ export function Quiz() {
     score,
     setScore,
   } = useQuizData();
-  const [ques, setQues] = useState(undefined);
+  const [ques, setQues] = useState<{
+    id: string;
+    question: string;
+    options: string[];
+    answer: string;
+    isSelected: string;
+  }>(undefined);
 
   useEffect(() => {
     (async () => {
@@ -46,11 +52,10 @@ export function Quiz() {
     );
   };
 
-  const gotoNextQuestion = () => {
+  const gotoNextQuestion = (): void => {
     if (ques.isSelected === ques.answer) {
-      setScore((prevScore) => prevScore + 20);
+      setScore(score + 20);
     }
-
     if (Number(quesNo) >= currentQuizQuestions.length - 1) {
       navigate("/result");
     } else {
@@ -82,7 +87,7 @@ export function Quiz() {
                 <Options
                   option={option}
                   key={id}
-                  id={id}
+                  id={id.toString()}
                   answer=""
                   isSelected={ques.isSelected}
                   handleOptionChange={handleOptionChange}

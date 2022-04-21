@@ -2,7 +2,7 @@ import { DarkModeIcon, LightModeIcon } from "assets/icons";
 import { useTheme } from "context";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-export const Navbar = () => {
+export const Navbar = (): JSX.Element => {
   const { theme, setTheme } = useTheme();
   return (
     <nav className="navbar">

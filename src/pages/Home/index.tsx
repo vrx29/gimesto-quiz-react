@@ -4,9 +4,9 @@ import hero from "assets/hero/vrguy.png";
 import { QuizCard } from "components";
 import { useQuizData } from "context";
 
-export function Home() {
+export function Home(): JSX.Element {
   const { quizData } = useQuizData();
-  const quizContRef = useRef(null);
+  const quizContRef = useRef<HTMLDivElement>(null);
 
   return (
     <section>

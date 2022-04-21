@@ -5,8 +5,8 @@ import { FingerRight } from "assets/icons";
 import { Link, useParams } from "react-router-dom";
 import { rules } from "data/rules";
 
-export function Rules() {
-  const { quizId } = useParams();
+export function Rules(): JSX.Element {
+  const { quizId } = useParams<{ quizId: string }>();
   return (
     <section>
       <div className="card">

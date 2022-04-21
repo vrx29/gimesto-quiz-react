@@ -6,7 +6,7 @@ import { useQuizData } from "context";
 import { Options } from "components";
 import { useNavigate } from "react-router-dom";
 
-export function Result() {
+export function Result(): JSX.Element {
   const {
     currentQuizQuestions,
     score,
@@ -15,7 +15,7 @@ export function Result() {
     setCurrentQuizQuestions,
   } = useQuizData();
   const navigate = useNavigate();
-  const handleQuizFinish = () => {
+  const handleQuizFinish = (): void => {
     setScore(0);
     setCurrentQuiz(null);
     setCurrentQuizQuestions(null);
@@ -41,7 +41,7 @@ export function Result() {
               {q.options.map((option, id) => (
                 <Options
                   option={option}
-                  id={id}
+                  id={id.toString()}
                   answer={q.answer}
                   isSelected={q.isSelected}
                   handleOptionChange={() => {}}

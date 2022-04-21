@@ -1,4 +1,4 @@
-export const rules = [
+export const rules: string[] = [
   "There will be 5 questions.",
   "Each question will be of one mark.",
   "There will be four options provided.",
