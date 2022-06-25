@@ -23,9 +23,6 @@ export const Navbar = (): JSX.Element => {
             <LightModeIcon />
           </button>
         )}
-        <Link to="#" className="btn btn-primary">
-          Log in
-        </Link>
       </div>
     </nav>
   );
